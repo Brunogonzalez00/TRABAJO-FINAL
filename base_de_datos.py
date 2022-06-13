@@ -117,9 +117,6 @@ class Cliente(Usuario):
                 return
         raise ValueError('list.remove(x): entrenador not in list')
 
-   # def suscribirseGimnasio(self,gimnasio):
-   #def suscribirseEmpresaFit
-
 class PlanBiofit(Enum):
         ADELGAZAMIENTO="ADELGAZAMIENTO"
         GANANCIA_MUSCULAR="GANANCIA_MUSCULAR"
@@ -133,7 +130,6 @@ class Entrenador(Usuario):
         self.especialidad = especialidad
         self.años_experiencia = anios_experiencia
         self.contacto = contacto
-        #o tbn lista alumnos cm prefieran
         self.lista_clientes=[]
         self.calendarioCliente=None
 
@@ -331,11 +327,10 @@ class Dieta:
 class Menu:
     def __init__(self,desayuno,comida,merienda,cena,dia):
         self.desayuno=desayuno
-        self.comida=comida #podria llamarse tbn almuerzo
+        self.comida=comida 
         self.merienda=merienda
         self.cena=cena
-        self.dia=dia  #lunes,martes,miercoles,...,etc
-
+        self.dia=dia  
     def getDesayuno(self):
         return self.desayuno
 
@@ -454,7 +449,7 @@ class Nutricionista(Usuario):
         nombre = input("Ingrese el nombre de la dieta: ")
         objetivo = input("Ingrese el objetivo de la dieta: ")
         descripcion = input("Describa la dieta: ")
-        tipoDieta= input("Ingrese el nombre del tipo de dieta: ") #Mediterranea, Vegana, Vegetariana
+        tipoDieta= input("Ingrese el nombre del tipo de dieta: ") 
         fechaInicio = input("Cual es la fecha de inicio de dieta: ")
         Semanas = input("Ingrese cuantas semanas durara la dieta: ")
         paciente=input("Ingrese el nombre del paciente para la dieta: ")
